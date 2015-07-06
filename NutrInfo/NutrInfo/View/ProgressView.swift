@@ -30,7 +30,7 @@ class ProgressView: UIView {
     {
         let activityContainer   = UIView(frame: CGRectMake(self.center.x + xOffset - activityContainerWidth / 2.0, self.center.y + yOffset - activityContainerWidth / 2.0, activityContainerWidth, activityContainerWidth))
         activityContainer.backgroundColor   = UIColor.blackColor()
-        activityContainer.layer.cornerRadius    = 4.0;
+        activityContainer.layer.cornerRadius    = 8.0;
         
         let activityIndicator   = UIActivityIndicatorView() as UIActivityIndicatorView
         activityIndicator.frame = CGRectMake(activityContainerWidth / 2.0 - 10.0, activityContainerWidth / 2.0 - 10.0, 20.0, 20.0)

@@ -148,6 +148,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func displayProgrssView()
     {
         activityView    = ProgressView(frame: self.view.frame) as ProgressView
+        activityView?.yOffset   = 30.0
         activityView?.displayProgressView()
         
         self.view.addSubview(activityView!)
