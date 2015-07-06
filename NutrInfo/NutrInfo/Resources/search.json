@@ -1,0 +1,146 @@
+[
+    {
+        "_id": "5583b6eca7b5352a7b241ec9",
+        "name": "Bak kut teh",
+        "protein": {
+            "unit": "g",
+            "value": 6.6
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 76
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 5.5
+        }
+    },
+    {
+        "_id": "5583b6f1a7b5352a7b24282d",
+        "name": "Mee pok, wanton, dry (P)",
+        "protein": {
+            "unit": "g",
+            "value": 8.3
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 170
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 3.3
+        }
+    },
+    {
+        "_id": "5583b6eea7b5352a7b242317",
+        "name": "Dim sum, you tiao",
+        "protein": {
+            "unit": "g",
+            "value": 8.3
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 341
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 19.6
+        }
+    },
+    {
+        "_id": "5585461fb2056f0588304593",
+        "name": "Kaya Toast",
+        "protein": {
+            "unit": "g",
+            "value": 8.75
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 325
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 10.24
+        }
+    },
+    {
+        "_id": "5583b6f1a7b5352a7b242767",
+        "name": "Laksa lemak",
+        "protein": {
+            "unit": "g",
+            "value": 4.2
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 107
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 6.1
+        }
+    },
+    {
+        "_id": "55894df9b2056f0588304b54",
+        "name": "Poori Bread",
+        "protein": {
+            "unit": "g",
+            "value": 7.54
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 296
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 9.43
+        }
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b2429bd",
+        "name": "Paneer pakora",
+        "protein": {
+            "unit": "g",
+            "value": 12.5
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 290
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 21.3
+        }
+    },
+    {
+        "_id": "5585d2a1b2056f05883046c5",
+        "name": "Pulav",
+        "protein": {
+            "unit": "g",
+            "value": 2.57
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 132
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 3.42
+        }
+    },
+    {
+        "_id": "55894dbcb2056f0588304b4c",
+        "name": "Roti",
+        "protein": {
+            "unit": "g",
+            "value": 9.61
+        },
+        "calories": {
+            "unit": "kcal",
+            "value": 264
+        },
+        "total_fats": {
+            "unit": "g",
+            "value": 1.3
+        }
+    }
+]
