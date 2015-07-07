@@ -15,11 +15,10 @@ class WebServiceManager: NSObject
         let urlString:String    = "http://test.holmusk.com/food/search?q="
         let queryString         = foodName.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
         let url : NSURL         = NSURL(string: urlString + queryString!)!
-
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
-            completionHandler(data: data, error: error);
-        }
         
-        task.resume()
+        let connection          = HTTPConnectionManager()
+        connection.createConnectionWithURL(url, completionHandler: { (data, error) -> Void in
+            completionHandler(data: data, error: error)
+        })
     }
 }

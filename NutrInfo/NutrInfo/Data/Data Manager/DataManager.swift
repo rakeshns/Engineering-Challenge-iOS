@@ -10,9 +10,6 @@ import UIKit
 
 class DataManager: NSObject {
    
-    override init() {
-        
-    }
     /*
     Name:           initialLocalStoredData
     Description:    return data saved in Search.json file for home screen.
@@ -23,4 +20,6 @@ class DataManager: NSObject {
         
         return data
     }
+    
+    
 }
