@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C703D8811B4AF52C00627654 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C703D8801B4AF52C00627654 /* ProgressView.swift */; };
+		C703D8831B4AFC5000627654 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C703D8821B4AFC5000627654 /* WebServiceManager.swift */; };
 		C749F6B21B481A1000D1B471 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = C749F6B11B481A1000D1B471 /* search.json */; };
 		C749F6B51B481B7F00D1B471 /* FoodInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F6B41B481B7F00D1B471 /* FoodInfoTableViewCell.swift */; };
 		C749F6B81B481CE600D1B471 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F6B71B481CE600D1B471 /* JSONParser.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		C703D8801B4AF52C00627654 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		C703D8821B4AFC5000627654 /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		C749F6B11B481A1000D1B471 /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
 		C749F6B41B481B7F00D1B471 /* FoodInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInfoTableViewCell.swift; sourceTree = "<group>"; };
 		C749F6B71B481CE600D1B471 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		C749F6BA1B481D1C00D1B471 /* Web Service Manager */ = {
 			isa = PBXGroup;
 			children = (
+				C703D8821B4AFC5000627654 /* WebServiceManager.swift */,
 			);
 			path = "Web Service Manager";
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				C703D8811B4AF52C00627654 /* ProgressView.swift in Sources */,
 				C7DB29461B0BAC5C0056581E /* NutrInfo.xcdatamodeld in Sources */,
 				C7DB29451B0BAC5C0056581E /* AppDelegate.swift in Sources */,
+				C703D8831B4AFC5000627654 /* WebServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

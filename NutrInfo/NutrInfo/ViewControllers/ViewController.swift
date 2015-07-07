@@ -12,10 +12,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var tableViewBottomSpace: NSLayoutConstraint!
+    @IBOutlet weak var searchTextfield: UITextField!
     
     var arrayFoodDetals: [AnyObject] = []
     var activityView:ProgressView?
-    
+    var searchQuery:String? = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -115,6 +116,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath)
     {
         // tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        let cell:UITableViewCell    = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        
+        if let label   = cell.viewWithTag(2) as? UILabel
+        {
+            searchQuery = label.text
+            
+            sendNutritionInfoRequest()
+        }
+        
+        
     }
     
     // MARK: Textfield delegates
@@ -122,8 +133,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
         textField.resignFirstResponder()
+    
+        searchQuery = textField.text
         
-        displayProgrssView()
+        sendNutritionInfoRequest()
         
         return true
     }
@@ -154,4 +167,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.view.addSubview(activityView!)
     }
     
+    func sendNutritionInfoRequest()
+    {
+        displayProgrssView()
+        
+        let webService:WebServiceManager = WebServiceManager()
+    
+        if (searchQuery != nil)
+        {
+            webService.getNutritionInformationOfFood(searchQuery!, completionHandler: { (dataHandler, errorHandler) -> Void in
+                
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    activityView?.removeActivityIndicator()
+                })
+            })
+        }
+        
+    }
 }
