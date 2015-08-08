@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14C1514" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="FoodDetails" representedClassName="" syncable="YES">
+        <attribute name="calories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cholesterol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dietary_fibre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foodName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageFilePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monounsaturated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="potassium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="protein" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saturated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sugar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_carbs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_fats" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FoodDetails" positionX="-63" positionY="-18" width="128" height="240"/>
+    </elements>
 </model>

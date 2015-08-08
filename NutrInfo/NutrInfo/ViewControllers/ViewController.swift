@@ -7,32 +7,45 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
-    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var foodItemList: UITableView!
     @IBOutlet weak var tableViewBottomSpace: NSLayoutConstraint!
     @IBOutlet weak var searchTextfield: UITextField!
+    @IBOutlet weak var suggestionList: UITableView!
+    
+    @IBOutlet weak var suggestionListHeightConstraint: NSLayoutConstraint!
     
     var arrayFoodDetals: [AnyObject] = []
+    var arraySuggestions    = []
     var activityView:ProgressView?
     var searchQuery:String? = ""
+    var foodDataId = ""
+    var keyBoardHeight:CGFloat = 0.0
+    
+    //MARK: UI related methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateUI()
         generateFoodDetails()
         setUpTableview()
+        self.foodItemList.reloadData()
     }
 
     override func viewWillAppear(animated: Bool)
     {
+        super.viewWillAppear(animated)
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         
-        super.viewWillAppear(animated)
+        self.searchTextfield.text = ""
     }
-    
+
     override func viewWillDisappear(animated: Bool)
     {
         NSNotificationCenter.defaultCenter().removeObserver(self)
@@ -40,7 +53,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func updateUI()
     {
-        self.tableview.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
+        self.foodItemList.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
+        self.navigationController?.navigationBarHidden = true
+        updateSuggestionListHeight(self.suggestionList, isHidden: true)
     }
     
     func generateFoodDetails()
@@ -50,12 +65,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func setUpTableview()
     {
-        self.tableview.delegate     = self;
-        self.tableview.dataSource   = self;
+        self.foodItemList.delegate     = self;
+        self.foodItemList.dataSource   = self;
         
-        self.tableview.reloadData()
+        self.suggestionList.delegate    = self
+        self.suggestionList.dataSource  = self
     }
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -69,41 +86,57 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+        if tableView == suggestionList
+        {
+            return self.arraySuggestions.count
+        }
         return self.arrayFoodDetals.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as? UITableViewCell
+        var cell:UITableViewCell?
+        
+        if tableView == self.foodItemList
+        {
+            var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as? FoodInfoTableViewCell
+            
+            if (cell == nil)
+            {
+                cell = FoodInfoTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+            }
+            
+            let foodDetail: NSDictionary = arrayFoodDetals[indexPath.row] as! NSDictionary
+            
+            cell?.foodImage.image   = UIImage(named: foodDetail["_id"] as! String)
+            cell?.foodName.text     = foodDetail["name"] as? String
+            
+            var dictionary  = foodDetail["protein"] as! NSDictionary
+            var unit        = dictionary["unit"] as! String
+            var value       = dictionary["value"] as! Int
+            
+            cell?.proteinLabel.text = "Protein " + String(value) + unit
+            
+            dictionary      = foodDetail["calories"] as! NSDictionary
+            unit            = dictionary["unit"] as! String
+            value           = dictionary["value"] as! Int
+            
+            cell?.caloriesLabel.text    = "Calories " + String(value) + " " + unit
+            
+            return cell!
+        }
+        
+        cell = tableView.dequeueReusableCellWithIdentifier("Suggestion", forIndexPath: indexPath) as? UITableViewCell
         
         if (cell == nil)
         {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Suggestion")
         }
         
-        let foodDetail: NSDictionary = arrayFoodDetals[indexPath.row] as! NSDictionary
-        
-        let imageview = cell?.viewWithTag(1) as! UIImageView
-    
-        imageview.image = UIImage(named: foodDetail["_id"] as! String)
-        
-        var nameLabel   = cell?.viewWithTag(2) as! UILabel
-        nameLabel.text  = foodDetail["name"] as? String
-        
-        var dictionary  = foodDetail["protein"] as! NSDictionary
-        
-        var unit        = dictionary["unit"] as! String
-        var value       = dictionary["value"] as! Int
-        
-        nameLabel       = cell?.viewWithTag(3) as! UILabel
-        nameLabel.text  = "Protein " + String(value) + unit
-        
-        dictionary      = foodDetail["calories"] as! NSDictionary
-        unit            = dictionary["unit"] as! String
-        value           = dictionary["value"] as! Int
-        
-        nameLabel       = cell?.viewWithTag(4) as! UILabel
-        nameLabel.text  = "Calories " + String(value) + " " + unit
+        if let foodDetails = self.arraySuggestions[indexPath.row] as? NSManagedObject
+        {
+            cell?.textLabel?.text   = foodDetails.valueForKey("foodName") as? String
+        }
         
         return cell!
     }
@@ -111,20 +144,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
     {
+        if tableView == self.suggestionList
+        {
+            return 40.0
+        }
         return 110.0
     }
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath)
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        // tableView.deselectRowAtIndexPath(indexPath, animated: false)
-        let cell:UITableViewCell    = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        
-        if let label   = cell.viewWithTag(2) as? UILabel
+        if tableView == self.suggestionList
         {
-            searchQuery = label.text
+            let cell:UITableViewCell?   = tableView.cellForRowAtIndexPath(indexPath)
+            self.searchTextfield.text   = cell?.textLabel?.text
             
+            updateSuggestionListHeight(self.suggestionList, isHidden: true)
+        }
+        else
+        {
+            let cell:FoodInfoTableViewCell    = tableView.cellForRowAtIndexPath(indexPath) as! FoodInfoTableViewCell
+            
+            searchQuery = cell.foodName.text
+            self.searchTextfield.text   = searchQuery
             sendNutritionInfoRequest()
         }
-        
         
     }
     
@@ -140,12 +182,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return true
     }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        let newString = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        displaySuggestions(newString)
+        
+        return true
+    }
+    
+    func textFieldShouldClear(textField: UITextField) -> Bool
+    {
+        updateSuggestionListHeight(self.suggestionList, isHidden: true)
+        return true
+    }
+    
+    // MARK: Helper methods
+    
     func keyboardWillShow(notification: NSNotification)
     {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue()
         {
             self.tableViewBottomSpace.constant  += (keyboardSize.height - 20.0)
             self.view.layoutIfNeeded()
+            keyBoardHeight = keyboardSize.height
         }
     }
     
@@ -169,21 +229,88 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func sendNutritionInfoRequest()
     {
-        displayProgrssView()
-        
-        let webService:WebServiceManager = WebServiceManager()
-    
-        if (searchQuery != nil)
+        if self.searchTextfield.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0
         {
-            webService.getNutritionInformationOfFood(searchQuery!, completionHandler: { (dataHandler, errorHandler) -> Void in
-                
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    activityView?.removeActivityIndicator()
+            let utility = Utilities()
+            utility.displayNoInputMessage(self)
+            self.searchTextfield.text   = ""
+        }
+        else
+        {
+            displayProgrssView()
+            self.searchTextfield.resignFirstResponder()
+            
+            let webService:WebServiceManager = WebServiceManager()
+            
+            if (searchQuery != nil)
+            {
+                webService.getNutritionInformationOfFood(searchQuery!, completionHandler: { (data, error) -> Void in
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        activityView?.removeActivityIndicator()
+                    })
+                    
+                    let dataManager = DataManager()
+                    
+                    dataManager.saveFoodInformationFromData(data, completionHandler: { (foodDetailsID) -> Void in
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            self.foodDataId = foodDetailsID
+                            self.performSegueWithIdentifier("details", sender: nil)
+                        })
+                    }, errorHandler: { (error) -> Void in
+                        let utility = Utilities()
+                        utility.displayGeneralMessage(self)
+                    })
                 })
+            }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
+    {
+        let destinationVC = segue.destinationViewController as! NutritionDetailsViewController
+        destinationVC.foodDataId = self.foodDataId
+    }
+    
+    func displaySuggestions(searchText:String?)
+    {
+        if searchText != nil
+        {
+            let dataManager = DataManager()
+            
+            let arrayResults = dataManager.getMatchingFoodnames(searchText!)
+            
+            if (arrayResults != nil && arrayResults?.isKindOfClass(NSArray) == true)
+            {
+                self.arraySuggestions = arrayResults!
                 
+                self.suggestionList.reloadData()
                 
-            })
+                if (arrayResults?.count == 0)
+                {
+                    updateSuggestionListHeight(self.suggestionList, isHidden: true)
+                }
+                else
+                {
+                    updateSuggestionListHeight(self.suggestionList, isHidden: false)
+                }
+            }
+        }
+    }
+    
+    func updateSuggestionListHeight(list:UITableView, isHidden ishidden:Bool)
+    {
+        if ishidden
+        {
+            self.suggestionListHeightConstraint.constant = 0.0
+        }
+        else
+        {
+            self.suggestionListHeightConstraint.constant = CGRectGetHeight(self.view.frame) - self.suggestionList.frame.origin.y - keyBoardHeight
         }
         
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
     }
 }

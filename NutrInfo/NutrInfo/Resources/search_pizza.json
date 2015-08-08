@@ -1,0 +1,2064 @@
+[
+    {
+        "_id": "5583b6f2a7b5352a7b242a55",
+        "name": "Pizza, pan, cheese, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 533
+                        },
+                        "polyunsaturated": null,
+                        "protein": {
+                            "unit": "g",
+                            "value": 12.19
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.07
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 2.3
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 1.57
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 174
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 2.45
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 32.54
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 1.85
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 5.1
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 15
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 223
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 97.78
+                        },
+                        "retinol": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 0.92
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 1.95
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 185
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 2
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 24.7
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 533
+                        },
+                        "polyunsaturated": null,
+                        "protein": {
+                            "unit": "g",
+                            "value": 12.19
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.07
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 2.3
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 1.571
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 174
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 2.445
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 32.54
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 1.85
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 5.1
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 15
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 223
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 97.78
+                        },
+                        "retinol": {
+                            "unit": "mg",
+                            "value": 0.001
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 0.92
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 1.95
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 185
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 2
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 24.7
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 0.001
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a57",
+        "name": "Pizza, pan, supreme, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 730.29
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 2.08
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 14.34
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.38
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 0.7
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 4.84
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 295.1
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 5.73
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 26.78
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 2.87
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 14.34
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 297.28
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 2.21
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 26.08
+                        },
+                        "linoleic_acid": {
+                            "unit": "g",
+                            "value": 1.61
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 65.26
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.29
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 111.84
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 1.3
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 561.76
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 1.6
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 11.03
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.29
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 0.54
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 3.72
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 227
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.41
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 20.6
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 2.21
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 11.03
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 228.68
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 0.001
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.7
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 20.06
+                        },
+                        "linoleic_acid": {
+                            "unit": "g",
+                            "value": 1.24
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 50.2
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 1.7648
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 86.03
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 1
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 0.001
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a56",
+        "name": "Pizza, pan, pepperoni, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 685.65
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 2.29
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 12.81
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.34
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 3.98
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 4.53
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 201.6
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.83
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 33.18
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 3.26
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 12.81
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 21
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 300.3
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 64.05
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 228.9
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 58.8
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 2.94
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0.34
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 22.37
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 29.2
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 1.76
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 43.42
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0.28
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.05
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 160.65
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 653
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 2.18
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 12.2
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.32
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 3.79
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 4.31
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 192
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.6
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 31.6
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 3.1
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 12.2
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 20
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 286
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 61
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 218
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 56
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 2.8
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0.32
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 21.3
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 27.81
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 1.68
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 41.35
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0.271
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 1.952
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 153
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a59",
+        "name": "Pizza, personal pan, supreme, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 1236.6
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 3.92
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 27
+                        },
+                        "trans": null,
+                        "sugar": {
+                            "unit": "g",
+                            "value": 8.59
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 12.31
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 486
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 13.12
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 53.73
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 4.94
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 33.48
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 59.4
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 623.7
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 1166.4
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 2.7
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 4.32
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 4.32
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 453.6
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 45.14
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 458
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 1.45
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 10
+                        },
+                        "trans": null,
+                        "sugar": {
+                            "unit": "g",
+                            "value": 3.18
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 4.56
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 180
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.86
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 19.9
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 1.83
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 12.4
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 22
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 231
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 432
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 1
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.6
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 1.6
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 168
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 16.72
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a5a",
+        "name": "Pizza, thin n crispy, cheese, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 537
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 1.1
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 12.15
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.2
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 2.13
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 2.47
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 132
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.58
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 21.3
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 2.03
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 9.15
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 20.25
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 213
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 84
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 237.75
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 80.25
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.13
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0.16
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 17.33
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 19.17
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 1.4
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 29.08
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0.21
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 1.94
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 202.5
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 716
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 1.47
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 16.2
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.26
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 2.84
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 3.29
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 176
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 6.1
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 28.4
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 2.7
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 12.2
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 27
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 284
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 112
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 317
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 107
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.5
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0.218
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 23.1
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 25.56
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 1.87
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 38.77
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0.276
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.592
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 270
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a5d",
+        "name": "Pizza, thin n crispy, supreme, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 740
+                        },
+                        "polyunsaturated": null,
+                        "protein": {
+                            "unit": "g",
+                            "value": 13.5
+                        },
+                        "trans": null,
+                        "sugar": null,
+                        "monounsaturated": null,
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 567
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 5.2
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 25
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 3.1
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 11.5
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 21
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 258
+                        }
+                    },
+                    "extra": {
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.9
+                        },
+                        "ala": {
+                            "unit": "g",
+                            "value": 0.24
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.16
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 156
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 740
+                        },
+                        "polyunsaturated": null,
+                        "protein": {
+                            "unit": "g",
+                            "value": 13.5
+                        },
+                        "trans": null,
+                        "sugar": null,
+                        "monounsaturated": null,
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 567
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 5.2
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 25
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 3.1
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 11.5
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 21
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 258
+                        }
+                    },
+                    "extra": {
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.9
+                        },
+                        "ala": {
+                            "unit": "g",
+                            "value": 0.24
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.16
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 156
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a5b",
+        "name": "Pizza, thin n crispy, pepperoni, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 693
+                        },
+                        "polyunsaturated": null,
+                        "protein": {
+                            "unit": "g",
+                            "value": 11.4
+                        },
+                        "trans": null,
+                        "sugar": null,
+                        "monounsaturated": null,
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 147.75
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.58
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 24.98
+                        },
+                        "dietary_fibre": null,
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 10.2
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 22.5
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 249.75
+                        }
+                    },
+                    "extra": {
+                        "iron": {
+                            "unit": "mg",
+                            "value": 2.03
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 1.82
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 114
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 924
+                        },
+                        "polyunsaturated": null,
+                        "protein": {
+                            "unit": "g",
+                            "value": 15.2
+                        },
+                        "trans": null,
+                        "sugar": null,
+                        "monounsaturated": null,
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 197
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 6.1
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 33.3
+                        },
+                        "dietary_fibre": null,
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 13.6
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 30
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 333
+                        }
+                    },
+                    "extra": {
+                        "iron": {
+                            "unit": "mg",
+                            "value": 2.7
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.432
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 152
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a5c",
+        "name": "Pizza, thin n crispy, super supreme, Pizza Hut",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 711
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 13.2
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 228
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.4
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 22.8
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 3.5
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 11.4
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 26
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 246
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.6
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "linoleic_acid": {
+                            "unit": "g",
+                            "value": 1.12
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.11
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 132
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 711
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 13.2
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 228
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.4
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 22.8
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 3.5
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 11.4
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 26
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 246
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "retinol": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.6
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "linoleic_acid": {
+                            "unit": "g",
+                            "value": 1.12
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "nitrogen": {
+                            "unit": "g",
+                            "value": 2.112
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 132
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 0
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a53",
+        "name": "Pizza bun",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 460.22
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 1.17
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 8.68
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.12
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 5.06
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 2.79
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 139.46
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.17
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 25.28
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 2.36
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 8.5
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 22.96
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 212.35
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 63.64
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 123.35
+                        },
+                        "retinol": {
+                            "unit": "mg",
+                            "value": 36.67
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 0.77
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0.08
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 43.17
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 20.23
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 0.97
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 42.73
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0.11
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 102.97
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 1.96
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 157.53
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 517.1
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 1.31
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 9.75
+                        },
+                        "trans": {
+                            "unit": "mg",
+                            "value": 0.14
+                        },
+                        "sugar": {
+                            "unit": "g",
+                            "value": 5.68
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 3.14
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 156.7
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 4.68
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 28.41
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 2.65
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 9.55
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 25.8
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 238.6
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 71.5
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 138.6
+                        },
+                        "retinol": {
+                            "unit": "mg",
+                            "value": 41.2
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 0.87
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0.09
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 48.5
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 22.73
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 1.09
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 48.01
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0.121
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 115.7
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 2.2
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 177
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    },
+    {
+        "_id": "5583b6f2a7b5352a7b242a51",
+        "name": "Pizza (JC)",
+        "portions": [
+            {
+                "name": "Per Serving",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 503.5
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 0.97
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 5.57
+                        },
+                        "trans": null,
+                        "sugar": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 0.82
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 0.89
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 25.26
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 1.4
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 3.08
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 9.66
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 150.38
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 44.79
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "retinol": {
+                            "unit": "mg",
+                            "value": 30.76
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.04
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 0
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 0
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 58.4
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 83.95
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Per 100g edible portion",
+                "nutrients": {
+                    "unhandled": [],
+                    "important": {
+                        "sodium": {
+                            "unit": "mg",
+                            "value": 689.73
+                        },
+                        "polyunsaturated": {
+                            "unit": "g",
+                            "value": 1.33
+                        },
+                        "protein": {
+                            "unit": "g",
+                            "value": 7.63
+                        },
+                        "trans": null,
+                        "sugar": {
+                            "unit": "g",
+                            "value": 0.001
+                        },
+                        "monounsaturated": {
+                            "unit": "g",
+                            "value": 1.12
+                        },
+                        "potassium": {
+                            "unit": "mg",
+                            "value": 0.001
+                        },
+                        "saturated": {
+                            "unit": "g",
+                            "value": 1.22
+                        },
+                        "total_carbs": {
+                            "unit": "g",
+                            "value": 34.6
+                        },
+                        "dietary_fibre": {
+                            "unit": "g",
+                            "value": 1.92
+                        },
+                        "total_fats": {
+                            "unit": "g",
+                            "value": 4.22
+                        },
+                        "cholesterol": {
+                            "unit": "mg",
+                            "value": 13.23
+                        },
+                        "calories": {
+                            "unit": "kcal",
+                            "value": 206
+                        }
+                    },
+                    "extra": {
+                        "vitamin_a": {
+                            "unit": "mcg",
+                            "value": 61.36
+                        },
+                        "phosphorus": {
+                            "unit": "mg",
+                            "value": 0.001
+                        },
+                        "retinol": {
+                            "unit": "mg",
+                            "value": 42.14
+                        },
+                        "iron": {
+                            "unit": "mg",
+                            "value": 1.42
+                        },
+                        "thiamin": {
+                            "unit": "mg",
+                            "value": 0.001
+                        },
+                        "selenium": {
+                            "unit": "mcg",
+                            "value": 0.001
+                        },
+                        "starch": {
+                            "unit": "g",
+                            "value": 0.001
+                        },
+                        "zinc": {
+                            "unit": "mg",
+                            "value": 0.001
+                        },
+                        "water": {
+                            "unit": "g",
+                            "value": 0.001
+                        },
+                        "riboflavin": {
+                            "unit": "mg",
+                            "value": 0.001
+                        },
+                        "calcium": {
+                            "unit": "mg",
+                            "value": 80
+                        },
+                        "vitamin_c": {
+                            "unit": "mg",
+                            "value": 0.001
+                        },
+                        "b-carotene": {
+                            "unit": "mcg",
+                            "value": 115
+                        }
+                    }
+                }
+            }
+        ],
+        "source": "encf_old"
+    }
+]
