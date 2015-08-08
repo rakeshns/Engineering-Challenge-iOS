@@ -10,6 +10,11 @@ import UIKit
 
 class FoodInfoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var foodName: UILabel!
+    @IBOutlet weak var caloriesLabel: UILabel!
+    @IBOutlet weak var proteinLabel: UILabel!
+    @IBOutlet weak var foodImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +25,4 @@ class FoodInfoTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
