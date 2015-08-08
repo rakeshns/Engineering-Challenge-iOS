@@ -9,10 +9,10 @@
 import UIKit
 
 class HTTPConnectionManager: NSObject {
-    func createConnectionWithURL(url:NSURL, completionHandler:(data:NSData, error:NSError)-> Void)
+    func createConnectionWithURL(url:NSURL, completionHandler:(data:NSData, error:NSError?)-> Void)
     {
         let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
-            completionHandler(data: data, error: error)
+            completionHandler(data: data, error: nil)
         })
         
         task.resume()
