@@ -27,7 +27,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //MARK: UI related methods
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         updateUI()
@@ -44,6 +45,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         
         self.searchTextfield.text = ""
+        self.navigationController?.navigationBarHidden = true
+        updateSuggestionListHeight(self.suggestionList, isHidden: true)
     }
 
     override func viewWillDisappear(animated: Bool)
@@ -54,8 +57,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func updateUI()
     {
         self.foodItemList.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
-        self.navigationController?.navigationBarHidden = true
-        updateSuggestionListHeight(self.suggestionList, isHidden: true)
+        
+        self.suggestionList.layer.borderColor = UIColor(white: 0.1, alpha: 0.3).CGColor
+        self.suggestionList.layer.borderWidth   = 1.0;
+        self.suggestionList.layer.cornerRadius  = 5.0
+        
     }
     
     func generateFoodDetails()
@@ -244,24 +250,48 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             if (searchQuery != nil)
             {
-                webService.getNutritionInformationOfFood(searchQuery!, completionHandler: { (data, error) -> Void in
+                if Reachability.isConnectedToNetwork()
+                {
+                    webService.getNutritionInformationOfFood(searchQuery!, completionHandler: { (data, error) -> Void in
+                        
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            activityView?.removeActivityIndicator()
+                        })
+                        
+                        
+                        let dataManager = DataManager()
+                        
+                        dataManager.saveFoodInformationFromData(data, completionHandler: { (foodDetailsID) -> Void in
+                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                                self.foodDataId = foodDetailsID
+                                self.performSegueWithIdentifier("details", sender: nil)
+                            })
+                            }, errorHandler: { (error) -> Void in
+                                let utility = Utilities()
+                                utility.displayGeneralMessage(self)
+                        })
+                    })
+                }
+                else
+                {
+                    let dataManager = DataManager()
+                    
+                    if let identifier = dataManager.getFoodIdentifierFromFoodName(searchQuery!)
+                    {
+                        self.foodDataId = identifier
+                        self.performSegueWithIdentifier("details", sender: nil)
+                    }
+                    else
+                    {
+                        let utility = Utilities()
+                        utility.displayGeneralMessage(self)
+                    }
                     
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         activityView?.removeActivityIndicator()
                     })
-                    
-                    let dataManager = DataManager()
-                    
-                    dataManager.saveFoodInformationFromData(data, completionHandler: { (foodDetailsID) -> Void in
-                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                            self.foodDataId = foodDetailsID
-                            self.performSegueWithIdentifier("details", sender: nil)
-                        })
-                    }, errorHandler: { (error) -> Void in
-                        let utility = Utilities()
-                        utility.displayGeneralMessage(self)
-                    })
-                })
+                }
+                
             }
         }
     }

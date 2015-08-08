@@ -40,7 +40,7 @@ class NutritionDetailsViewController: UIViewController, UICollectionViewDelegate
     func displayNutritionInformationOfFoodItem(foodItemId:String)
     {
         let dataManager:DataManager = DataManager()
-        if let arrayNutritionInfo = dataManager.getNutritionInformationForFoodId(foodItemId)
+        if let arrayNutritionInfo = dataManager.getNutritionInformationFromFoodId(foodItemId)
         {
             if let nutritionInfo = arrayNutritionInfo.firstObject as? NSManagedObject
             {
@@ -67,15 +67,27 @@ class NutritionDetailsViewController: UIViewController, UICollectionViewDelegate
     
     func displayFoodItemImage(foodName:String)
     {
-        let webService = WebServiceManager()
-        webService.downloadImageForFoodItem(foodName, completionHandler: { (image) -> Void in
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                UIView.transitionWithView(self.imageView, duration: 0.4, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
-                    self.imageView.image  = image
-                }, completion: { Bool -> Void in
+        if Reachability.isConnectedToNetwork()
+        {
+            let webService = WebServiceManager()
+            webService.downloadImageForFoodItem(foodName, completionHandler: { (image) -> Void in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    UIView.transitionWithView(self.imageView, duration: 0.4, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
+                        self.imageView.image  = image
+                        }, completion: { Bool -> Void in
+                    })
                 })
             })
-        })
+        }
+        else
+        {
+            let dataManager = DataManager()
+            let image = dataManager.getImageFromFileName(self.foodDataId! + "jpg")
+            
+            self.imageView.image = image
+            
+        }
+        
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {

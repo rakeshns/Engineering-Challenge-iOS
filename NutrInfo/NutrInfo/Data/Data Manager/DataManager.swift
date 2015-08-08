@@ -287,11 +287,11 @@ class DataManager: NSObject {
     }
     
     /*
-    Name:           getNutritionInformationForFoodId
+    Name:           getNutritionInformationFromFoodId
     Description:    retrieve nutrition information from Database
     */
     
-    func getNutritionInformationForFoodId(foodId:String) -> NSArray?
+    func getNutritionInformationFromFoodId(foodId:String) -> NSArray?
     {
         var coreDataHandler = CoreDataManager()
         let predicate = NSPredicate(format: "self.identifier ==[c] %@", foodId)
@@ -305,6 +305,7 @@ class DataManager: NSObject {
     Name:           getMatchingFoodnames
     Description:    retrieve food information for name suggestions
     */
+    
     func getMatchingFoodnames(searchString:String) ->NSArray?
     {
         var coreDataHandler = CoreDataManager()
@@ -312,5 +313,65 @@ class DataManager: NSObject {
         let arrayResults = coreDataHandler.retrieveDataWithEntityName("FoodDetails", withPredicate: predicate, sortDescriptors: nil)
         
         return arrayResults
+    }
+    
+    /*
+    Name:           getNutritionInformationFromFoodName
+    Description:    retrieve nutrition information from Database
+    */
+    
+    func getFoodIdentifierFromFoodName(searchString:String) ->String?
+    {
+        var foodId:String?
+        var coreDataHandler = CoreDataManager()
+        let predicate = NSPredicate(format: "(self.foodName ==[c] %@) OR (self.foodName CONTAINS[c] %@)", searchString, searchString)
+        
+        let arrayResults = coreDataHandler.retrieveDataWithEntityName("FoodDetails", withPredicate: predicate, sortDescriptors: nil)
+        
+        if ((arrayResults != nil) && (arrayResults?.isKindOfClass(NSArray) == true) && (arrayResults?.count > 0))
+        {
+            if let foodInformation = arrayResults?.firstObject as? NSManagedObject
+            {
+                foodId = foodInformation.valueForKey("identifier") as? String
+            }
+        }
+        return foodId
+    }
+    
+    /*
+    Name:           saveImage:withFileNmae
+    Description:    Saves image for offline use
+    */
+
+    func saveImage(image:UIImage, withFileNmae fileName:String)
+    {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as? String
+        if let destinationPath = documentsPath?.stringByAppendingPathComponent(fileName + "jpg")
+        {
+            UIImageJPEGRepresentation(image,1.0).writeToFile(destinationPath, atomically: true)
+        }
+    }
+    
+    /*
+    Name:           getImageFromFileName
+    Description:    get saved image
+    */
+    
+    func getImageFromFileName(fileName:String) ->UIImage
+    {
+        var image = UIImage(named: "Food-Guidelines")
+        
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as? String
+        if let destinationPath = documentsPath?.stringByAppendingPathComponent(fileName + "jpg")
+        {
+            if NSFileManager.defaultManager().fileExistsAtPath(destinationPath)
+            {
+                if let data = NSData(contentsOfFile: destinationPath)
+                {
+                    image = UIImage(data: data)
+                }
+            }
+        }
+        return image!
     }
 }
