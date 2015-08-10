@@ -346,7 +346,7 @@ class DataManager: NSObject {
     func saveImage(image:UIImage, withFileNmae fileName:String)
     {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as? String
-        if let destinationPath = documentsPath?.stringByAppendingPathComponent(fileName + "jpg")
+        if let destinationPath = documentsPath?.stringByAppendingPathComponent(fileName)
         {
             UIImageJPEGRepresentation(image,1.0).writeToFile(destinationPath, atomically: true)
         }
@@ -362,7 +362,7 @@ class DataManager: NSObject {
         var image = UIImage(named: "Food-Guidelines")
         
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as? String
-        if let destinationPath = documentsPath?.stringByAppendingPathComponent(fileName + "jpg")
+        if let destinationPath = documentsPath?.stringByAppendingPathComponent(fileName)
         {
             if NSFileManager.defaultManager().fileExistsAtPath(destinationPath)
             {

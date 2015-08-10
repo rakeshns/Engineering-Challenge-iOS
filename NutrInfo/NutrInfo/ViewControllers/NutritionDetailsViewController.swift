@@ -74,6 +74,8 @@ class NutritionDetailsViewController: UIViewController, UICollectionViewDelegate
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     UIView.transitionWithView(self.imageView, duration: 0.4, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
                         self.imageView.image  = image
+                        let dataManager = DataManager()
+                        dataManager.saveImage(image, withFileNmae: self.foodDataId! + ".jpg")
                         }, completion: { Bool -> Void in
                     })
                 })
@@ -82,7 +84,7 @@ class NutritionDetailsViewController: UIViewController, UICollectionViewDelegate
         else
         {
             let dataManager = DataManager()
-            let image = dataManager.getImageFromFileName(self.foodDataId! + "jpg")
+            let image = dataManager.getImageFromFileName(self.foodDataId! + ".jpg")
             
             self.imageView.image = image
             
